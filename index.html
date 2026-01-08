@@ -92,25 +92,6 @@
         radial-gradient(600px 200px at 20% 0%, rgba(37,99,235,.10), transparent 60%) border-box;
     }
 
-    /* キャンバス右上：ショートカット（小さめ） */
-    .clearFloating{
-      position:absolute;
-      top:12px;
-      right:12px;
-      height:38px;
-      padding:0 12px;
-      border-radius:999px;
-      border:1px solid rgba(255,255,255,.5);
-      background:rgba(15,23,42,.55);
-      color:#fff;
-      font-weight:650;
-      font-size:13px;
-      cursor:pointer;
-      box-shadow: 0 10px 22px rgba(2,6,23,.18);
-    }
-    .clearFloating:hover{ background:rgba(15,23,42,.65); }
-    .clearFloating:active{ transform: translateY(1px); }
-
     .actions{
       display:grid;
       grid-template-columns: 1fr 2fr;
@@ -183,7 +164,6 @@
 
       <section class="canvasWrap" id="canvasWrap">
         <canvas id="canvas"></canvas>
-        <button class="clearFloating" id="clearBtnFloating" type="button">消す</button>
       </section>
 
       <div class="actions" id="actions">
