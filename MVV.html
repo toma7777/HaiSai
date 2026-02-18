@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>MVV デザインサンプル</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Noto+Sans+JP:wght@700&family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #fff;
+      margin: 0;
+      padding: 0;
+      font-family: 'Noto Sans JP', 'Montserrat', '游ゴシック体', 'Yu Gothic', 'Meiryo', sans-serif;
+      color: #222;
+    }
+    .container {
+      max-width: 900px;
+      margin: 60px auto 0 auto;
+      padding: 0 24px 60px 24px;
+    }
+    .section {
+      margin-bottom: 80px;
+    }
+    .mvv-label {
+      font-weight: bold;
+      font-size: 2rem;
+      letter-spacing: 0.05em;
+      margin-bottom: 60px;
+      text-align: left;
+      color: #0070c0;
+    }
+    .main-message {
+      font-family: 'Noto Serif JP', 'Sawarabi Mincho', 'Kaisei Tokumin', 'Yu Mincho', '游明朝', 'Hiragino Mincho ProN', 'Times New Roman', serif;
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 48px;
+      letter-spacing: 0.1em;
+      font-weight: 700;
+      color: #222;
+    }
+    .sub-message {
+      font-family: 'Sawarabi Mincho', '游明朝', 'Yu Mincho', 'ヒラギノ明朝 ProN', 'Hiragino Mincho ProN', serif;
+      font-size: 1.2rem;
+      line-height: 2.2;
+      text-align: center;
+      color: #222;
+      letter-spacing: 0.05em;
+      margin-bottom: 20px;
+    }
+    /* VALUE Section */
+    .value-list {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+    .value-item {
+      background: #f8fafc;
+      border-left: 6px solid #0070c0;
+      border-radius: 6px;
+      padding: 16px 20px;
+      box-sizing: border-box;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+    .value-lead {
+      font-family: 'Montserrat', 'Noto Sans JP', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #0070c0;
+      min-width: 110px;
+      flex-shrink: 0;
+      letter-spacing: 0.03em;
+    }
+    .value-desc {
+      font-family: 'Sawarabi Mincho', '游明朝', 'Yu Mincho', serif;
+      font-size: 1.05rem;
+      color: #222;
+      line-height: 1.7;
+      margin: 0;
+      word-break: break-word;
+      white-space: normal;
+    }
+    @media (max-width: 600px) {
+      .container {
+        padding: 0 8px 40px 8px;
+      }
+      .section {
+        margin-bottom: 48px;
+      }
+      .mvv-label {
+        font-size: 1.2rem;
+        margin-bottom: 32px;
+      }
+      .main-message {
+        font-size: 1.3rem;
+        margin-bottom: 24px;
+      }
+      .sub-message {
+        font-size: 1rem;
+        line-height: 2;
+      }
+      .value-list {
+        gap: 10px;
+      }
+      .value-item {
+        padding: 10px 8px;
+        gap: 8px;
+      }
+      .value-lead {
+        font-size: 0.98rem;
+        min-width: 80px;
+      }
+      .value-desc {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Vision -->
+    <div class="section">
+      <div class="mvv-label">VISION</div>
+      <div class="main-message">
+        取引が止まらない社会をつくる。
+      </div>
+      <div class="sub-message">
+        現場・バックオフィス・経営、<br>
+        どこかが詰まることで事業が止まる。<br>
+        そんな状態を前提にしない世界。
+      </div>
+    </div>
+
+    <!-- Mission -->
+    <div class="section">
+      <div class="mvv-label">MISSION</div>
+      <div class="main-message">
+        取引の流れをデザインする。
+      </div>
+      <div class="sub-message">
+        業務を点で見ない。<br>
+        システムを目的にしない。<br>
+        取引が自然に回る“流れ”そのものを設計し続ける。
+      </div>
+    </div>
+
+    <!-- Value -->
+    <div class="section">
+      <div class="mvv-label">VALUE</div>
+      <div class="main-message">
+        私たちの行動原則
+      </div>
+      <div class="value-list">
+        <div class="value-item">
+          <span class="value-desc">業務を点ではなく全体の流れとして捉え、部分最適ではなく全体最適を目指します。</span>
+        </div>
+        <div class="value-item">
+          <span class="value-desc">システムや手段にとらわれず、まず取引そのものの本質を深く理解します。</span>
+        </div>
+        <div class="value-item">
+          <span class="value-desc">“回っているか”を最優先に判断し、取引が自然に循環する状態を目指します。</span>
+        </div>
+        <div class="value-item">
+          <span class="value-desc">効率だけでなく、業務や取引の整合性・一貫性を重視します。</span>
+        </div>
+        <div class="value-item">
+          <span class="value-desc">「動いているかどうか」を常に基準とし、現場のリアルな動きを大切にします。</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
